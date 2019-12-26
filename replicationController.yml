@@ -1,0 +1,21 @@
+---
+apiVersion: V1
+kind: ReplicationController
+metadata:
+  name: domain1
+spec:
+  replicas: 3
+  selector:
+    app: weblogic-domain1
+  template:
+    metadata:
+      labels:
+        app: weblogic-domain1
+    spec:
+      containers:
+        -
+          image: "registry.docker.nat.bt.com/middleware/weblogic1036:191004"
+          name: wls1036
+          ports:
+            -
+              containerPort: 61000-61006
