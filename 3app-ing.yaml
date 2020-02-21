@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ingress3
+  name: 3app-ingress
   labels:
     app: my-docker-apps
   annotations:
@@ -16,12 +16,8 @@ spec:
       - path: /v2
         backend:
           serviceName: app2
-          servicePort: 80
+          servicePort: 8080
       - path: /v3
         backend:
           serviceName: app3
           servicePort: 8080
-      - path: /v4
-        backend: 
-          serviceName: app4
-          servicePort: 8080 
