@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: app
+  name: app1
   namespace: default
 spec:
   ports:
@@ -9,5 +9,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    run: app
+    run: app1
   type: NodePort
