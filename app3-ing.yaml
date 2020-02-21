@@ -5,8 +5,6 @@ metadata:
   labels:
     app: my-docker-apps
   annotations:
-    ingress.kubernetes.io/rewrite-target: /
-    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - http:
@@ -19,3 +17,11 @@ spec:
         backend:
           serviceName: app2
           servicePort: 80
+      - path: /v3
+        backend:
+          serviceName: app3
+          servicePort: 8080
+      - path: /v4
+        backend: 
+          serviceName: app4
+          servicePort: 8080 
