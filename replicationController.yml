@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         -
-          image: "registry.docker.nat.bt.com/middleware/weblogic1036:191004"
+          image: "punitporwal07/weblogic1036:191004"
           name: wls1036
           ports:
             -
