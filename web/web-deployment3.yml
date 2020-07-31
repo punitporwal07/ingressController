@@ -13,9 +13,9 @@ spec:
         run: app1
     spec:
       containers:
-      - image: punitporwal07/apache4ingress:1.0
-        imagePullPolicy: IfNotPresent
-        name: app1
+      - name: app1
+        image: punitporwal07/apache4ingress:1.0
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
           protocol: TCP
