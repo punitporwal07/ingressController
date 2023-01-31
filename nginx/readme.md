@@ -11,5 +11,5 @@ kubectl apply -f nginx-ingress-daemonset.yaml
 ```
 ```
 kubectl get pods -n nginx-ingress
-kubectl logs nginx-ingress-ck662 -n nginx-ingress
+kubectl logs nginx-ingress-15pod-nam3 -n nginx-ingress
 ```
