@@ -5,7 +5,7 @@ cd nginx/
 kubectl apply -f ns-sa.yaml
 kubectl apply -f default-server-secret.yaml
 kubectl apply -f nginx-configmap.yaml
-kubectl apply -f custom-resource-definitions.yaml
+kubectl apply -f custom-resource-definitions.yaml [optional]
 kubectl apply -f rbac.yaml
 kubectl apply -f nginx-ingress-daemonset.yaml
 ```
